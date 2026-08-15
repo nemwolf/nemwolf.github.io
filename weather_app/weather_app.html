@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Weather App (USA only)</h1>
+        <br>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="zip code" id="zip_code">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button" onclick="GetWeather()">Submit</button>
+            </div>
+        </div>
+       <div class="alert alert-primary" role="alert" style="display: none;" id="response">
+        <h2 id="location"></h2>
+        <p id="forecast"></p>
+       </div>
+    </div>
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
