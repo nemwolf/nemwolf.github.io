@@ -5,32 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nem's Website</title>
     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <h1>Nem's Personal Website</h1>
         <hr>
         <h2>About Me</h2>
-        <p>I am a CS Student and I like Pokémon. Other than that I do like to repair tech and program. I am also a Furry.</p>
+        <p>I am a CS Student and I like Pokémon. Other than that I do like to repair stuff, take photos, and program. I am also a Furry.</p>
+        <hr>
+        <h2>Comissioned art</h2>
+
+        <div class="row justify-content-start">
+            <div class="col-auto">
+                <div class="card h-100" style="width: 15rem;">
+                    <img src="images/nem_apolozorua.jpg" class="img-fluid" >
+                    <div class="card-body">
+                        <p class="card-text text-center">@Apolozorua</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="card h-100" style="width: 15rem;">
+                    <img src="/images/nem_burntonly.jpg" class="img-fluid" >
+                    <div class="card-body">
+                        <p class="card-text text-center">@BurntOnly</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <hr>
         <h2>Collections</h2>
         <p class="text-secondary">click to show and click again to hide</p>
+        
 
-        <button class="btn" onclick="unHidePlush()">Plush Collection</button>
-        <img src="/images/C00A2204.jpg" class="img-fluid" id="plush_image" style="display: none;">
+        <button class="btn border border-dark" onclick="unHidePlush()">Plush Collection</button>
+        <img src="/images/C00A2204.jpg" class="img-fluid" id="plush_image" style="display: none; max-height: 30rem; width:auto;">
         <hr>
+
+        <!-- <h2>Personal Projects</h2>
+
+        <hr> -->
+
         <h2>Social Media</h2>
         <a href="https://twitter.com/NemWolf1">
-            <button class="btn">Twitter</button>
+            <button class="btn border border-dark"><i class="bi bi-twitter" style="font-size: 1.5rem;"></i></button>
         </a>
         <a href="https://bsky.app/profile/nemwolf.bsky.social">
-            <button class="btn">Bluesky</button>
+            <button class="btn border border-dark"><i class="bi bi-bluesky" style="font-size: 1.5rem;"></i></button>
+        </a>
+        <a href="https://github.com/nemwolf">
+            <button class="btn border border-dark"><i class="bi bi-github" style="font-size: 1.5rem;"></i></button>
+        </a>
+        <a href="https://www.reddit.com/user/nemwolf/">
+            <button class="btn border border-dark"><i class="bi bi-reddit" style="font-size: 1.5rem;"></i></button>
         </a>
         <hr>
         <footer>
-            <p>&copy; <span id="year"></span> Nemwolf. All rights reserved.</p>
+            <p>Use of any content on this website for training of AI is prohibited.<br>&copy; <span id="year"></span> Nemwolf. All rights reserved.</p>
         </footer>
     </div>
     <!-- Optional JavaScript -->
