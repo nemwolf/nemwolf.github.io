@@ -5,11 +5,13 @@ async function GetWeather() {
         const location = document.getElementById("location");
         const responseBox = document.getElementById("response");
 
+        //if the ZIP code fails the regex
         if (!/^\d{5}$/.test(zipCode)) {
             alert("Please enter a valid 5-digit ZIP code.");
             return;
         }
 
+        //clear the response box
         responseBox.style.display = "none";
 
         // Get location data from ZIP code
@@ -17,6 +19,7 @@ async function GetWeather() {
             `https://api.zippopotam.us/us/${zipCode}`
         );
 
+        //if there was an issue converting ZIP code to coordinates
         if (!zipResponse.ok) {
             throw new Error("Error fetching ZIP code information.");
         }

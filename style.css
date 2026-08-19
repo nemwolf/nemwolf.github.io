@@ -1,17 +1,24 @@
-body{
+body {
     background-color: pink;
 }
-.pokemon-sprites img{
+
+.pokemon-sprites img {
     width: 80px;
     height: 80px;
     object-fit: contain;
 }
-/* .pokemon-sprites > div {
-    flex: 0 0 10%;
-} */
 
 .pride-flags img {
     aspect-ratio: 3/2;
     max-height: 8rem;
     width: auto;
+}
+
+.poster-cover {
+    width: 11rem;
+}
+
+.poster img {
+    width: 100%;
+    height: auto;
 }

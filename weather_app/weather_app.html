@@ -10,8 +10,41 @@
 </head>
 <body>
     <div class="container">
-
-        <h1>Weather App (USA only)</h1>
+        
+        <nav class="navbar navbar-expand-lg bg-body-tertiary rounded">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Nem's Website</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../favorites.html">Favorites</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Projects
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../weather_app/weather_app.html">Weather App</a></li>
+                                <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <h1 class="text-center">Weather App (USA only)</h1>
+        <p class="text-center text-secondary">Will provide the forecast using the NWS API</p>
         <br>
         <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="zip code" id="zip_code">
