@@ -6,9 +6,9 @@ body{
     height: 80px;
     object-fit: contain;
 }
-.pokemon-sprites > div {
+/* .pokemon-sprites > div {
     flex: 0 0 10%;
-}
+} */
 
 .pride-flags img {
     aspect-ratio: 3/2;
